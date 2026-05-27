@@ -115,8 +115,12 @@
   .product-photo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:78%;height:auto;mix-blend-mode:multiply;filter:drop-shadow(0 32px 30px rgba(58,77,44,.28)) contrast(1.02) saturate(1.05)}
   /* hero portrait: full-bleed editorial photo */
   .hero-portrait{position:relative;aspect-ratio:4/5;border-radius:2px;overflow:hidden;background:#1d1d1b;box-shadow:0 50px 80px -40px rgba(29,29,27,.45)}
-  .hero-portrait img{width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.03) saturate(1.02)}
+  .hero-portrait img,.hero-portrait video{width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.03) saturate(1.02)}
   .hero-portrait::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(29,29,27,.55));pointer-events:none}
+  .sound-toggle{position:absolute;left:22px;top:22px;z-index:3;display:inline-flex;align-items:center;gap:8px;background:rgba(29,29,27,.6);backdrop-filter:blur(6px);color:var(--cream);border:1px solid rgba(244,237,224,.3);border-radius:99px;padding:8px 14px;font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:background .2s}
+  .sound-toggle:hover{background:rgba(184,84,54,.85);border-color:transparent}
+  .sound-toggle[data-on="off"] svg .x1,.sound-toggle[data-on="off"] svg .x2{display:inline}
+  .sound-toggle[data-on="on"] svg .x1,.sound-toggle[data-on="on"] svg .x2{display:none}
   .vis-caption{position:absolute;left:24px;bottom:22px;font-family:var(--serif);font-style:italic;font-size:18px;color:var(--olive-deep);letter-spacing:.02em}
   .vis-stamp{position:absolute;right:22px;top:22px;width:96px;height:96px;border:1px solid var(--olive);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--olive);text-align:center;line-height:1.1;font-family:var(--serif);font-size:14px;font-weight:500;transform:rotate(-8deg);background:rgba(244,237,224,.6)}
   .vis-stamp em{font-style:italic;display:block;font-size:11px;margin-top:2px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.18em;font-weight:600}
@@ -330,7 +334,13 @@
     </div>
 
     <div class="hero-portrait fade-up">
-      <img src="img/ai-3-man.png" alt="Editorial-Portrait: gepflegter Mann, mediterranes Tageslicht" width="1024" height="1024">
+      <video id="spot" autoplay muted loop playsinline poster="img/ai-3-man.png" preload="metadata">
+        <source src="video/uomo-4s.mp4" type="video/mp4">
+      </video>
+      <button class="sound-toggle" type="button" aria-label="Ton einschalten" onclick="(function(b){const v=document.getElementById('spot');v.muted=!v.muted;b.dataset.on=v.muted?'off':'on';b.setAttribute('aria-label', v.muted?'Ton einschalten':'Ton ausschalten');})(this)" data-on="off">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line class="x1" x1="23" y1="9" x2="17" y2="15"/><line class="x2" x1="17" y1="9" x2="23" y2="15"/></svg>
+        <span>Ton</span>
+      </button>
       <div class="vis-stamp">AIAB<em>certified</em></div>
       <div class="vis-caption">50 ml · alkoholfrei · 15,79 €</div>
     </div>
