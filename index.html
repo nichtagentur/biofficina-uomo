@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UOMO — Antioxidative After-Shave-Creme · Biofficina Toscana</title>
+<meta name="description" content="Alkoholfreie Pflege aus der Toskana. Mit Olivenöl, Mariendistel, Brennnessel und Malve. Subtil-würzig, vegan, AIAB-zertifiziert. 50 ml, 15,79 €.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#3a4d2c;
+    --olive-deep:#2a3a1f;
+    --olive-soft:#5a6e48;
+    --cream:#f4ede0;
+    --cream-warm:#ede2cd;
+    --travertine:#e8dcc2;
+    --terra:#b85436;
+    --terra-deep:#8f3f27;
+    --sage:#8a9a7b;
+    --ink:#1d1d1b;
+    --ink-soft:#3a3a35;
+    --rule:rgba(29,29,27,.15);
+    --serif:'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+    --sans:'Manrope', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.55;-webkit-font-smoothing:antialiased}
+  body{
+    background:
+      radial-gradient(ellipse at 80% -10%, rgba(184,84,54,.07), transparent 50%),
+      radial-gradient(ellipse at -10% 30%, rgba(58,77,44,.08), transparent 55%),
+      var(--cream);
+    overflow-x:hidden;
+  }
+  /* film grain overlay */
+  body::before{
+    content:'';position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.04;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .7 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;margin:0}
+  .eyebrow{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--olive)}
+  .container{max-width:1240px;margin:0 auto;padding:0 28px}
+
+  /* ---- HEADER ---- */
+  header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(244,237,224,.78);border-bottom:1px solid var(--rule)}
+  .topbar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:baseline;gap:10px}
+  .brand-mark{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:-.01em}
+  .brand-mark em{font-style:italic;color:var(--olive)}
+  .brand-tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+  nav ul{display:flex;list-style:none;margin:0;padding:0;gap:30px;font-size:14px}
+  nav a{position:relative;padding:6px 0;color:var(--ink-soft);transition:color .2s}
+  nav a:hover{color:var(--olive)}
+  nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--olive);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+  nav a:hover::after{transform:scaleX(1)}
+  .ev-badge{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);border:1px solid var(--olive);padding:6px 10px;border-radius:3px}
+  @media (max-width:780px){nav{display:none}}
+
+  /* ---- HERO ---- */
+  .hero{padding:80px 0 110px;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:end}
+  @media (max-width:980px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+  .hero-meta{display:flex;align-items:center;gap:14px;margin-bottom:32px}
+  .hero-meta .line{flex:0 0 60px;height:1px;background:var(--olive)}
+  .hero h1{
+    font-size:clamp(54px,9vw,128px);
+    line-height:.92;font-weight:500;letter-spacing:-.025em;
+    margin:0 0 6px;
+  }
+  .hero h1 .uomo{
+    display:block;font-style:italic;color:var(--olive);
+    font-weight:600;letter-spacing:-.04em;
+    text-indent:-.05em;
+  }
+  .hero h1 .sub{
+    display:block;font-size:.32em;font-style:normal;color:var(--ink);
+    font-family:var(--serif);font-weight:400;letter-spacing:-.01em;
+    margin-top:14px;
+  }
+  .hero-lede{
+    max-width:46ch;font-size:18px;line-height:1.6;color:var(--ink-soft);
+    margin:34px 0 38px;
+  }
+  .hero-lede strong{color:var(--ink);font-weight:600}
+  .cta-row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .btn-buy{
+    display:inline-flex;align-items:baseline;gap:14px;
+    background:var(--terra);color:var(--cream);
+    padding:18px 28px;border:0;cursor:pointer;
+    font-family:var(--sans);font-weight:600;font-size:14px;
+    letter-spacing:.14em;text-transform:uppercase;
+    box-shadow:0 12px 28px -16px rgba(184,84,54,.55);
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  }
+  .btn-buy:hover{background:var(--terra-deep);transform:translateY(-2px);box-shadow:0 22px 38px -18px rgba(143,63,39,.6)}
+  .btn-buy .price{font-family:var(--serif);font-size:20px;font-weight:600;text-transform:none;letter-spacing:-.01em}
+  .price-note{font-size:13px;color:var(--ink-soft);letter-spacing:.04em}
+  .price-note b{color:var(--olive);font-weight:600}
+
+  /* product visual */
+  .product-vis{position:relative;aspect-ratio:5/6;border-radius:2px;overflow:hidden;background:linear-gradient(160deg,var(--travertine),var(--cream-warm) 60%, var(--cream));box-shadow:0 40px 60px -40px rgba(58,77,44,.4)}
+  .product-vis::after{
+    content:'';position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(255,255,255,.6), transparent 40%),
+      radial-gradient(circle at 70% 80%, rgba(58,77,44,.2), transparent 50%);
+    pointer-events:none;
+  }
+  .product-svg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:60%;height:auto;filter:drop-shadow(0 30px 25px rgba(0,0,0,.15))}
+  .vis-caption{position:absolute;left:24px;bottom:22px;font-family:var(--serif);font-style:italic;font-size:18px;color:var(--olive-deep);letter-spacing:.02em}
+  .vis-stamp{position:absolute;right:22px;top:22px;width:96px;height:96px;border:1px solid var(--olive);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--olive);text-align:center;line-height:1.1;font-family:var(--serif);font-size:14px;font-weight:500;transform:rotate(-8deg);background:rgba(244,237,224,.6)}
+  .vis-stamp em{font-style:italic;display:block;font-size:11px;margin-top:2px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.18em;font-weight:600}
+
+  /* ---- MARQUEE ---- */
+  .marquee{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:16px 0;overflow:hidden;background:rgba(58,77,44,.04)}
+  .marquee-track{display:flex;gap:60px;white-space:nowrap;animation:scroll 38s linear infinite;font-family:var(--serif);font-style:italic;font-size:20px;color:var(--olive)}
+  .marquee-track span{display:inline-flex;align-items:center;gap:60px}
+  .marquee-track span::after{content:'·';color:var(--terra)}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---- SECTION ---- */
+  section{padding:120px 0;position:relative}
+  .section-head{display:grid;grid-template-columns:120px 1fr;gap:40px;align-items:start;margin-bottom:60px}
+  @media (max-width:780px){.section-head{grid-template-columns:1fr;gap:18px}}
+  .section-num{font-family:var(--serif);font-size:48px;color:var(--terra);font-weight:500;line-height:1}
+  .section-head h2{font-size:clamp(36px,5vw,64px);font-weight:500;line-height:1.05;max-width:18ch}
+  .section-head h2 em{color:var(--olive);font-style:italic}
+  .section-intro{max-width:60ch;font-size:17px;line-height:1.65;color:var(--ink-soft);margin:24px 0 0;grid-column:2/3}
+  @media (max-width:780px){.section-intro{grid-column:1}}
+
+  /* ---- BOTANICALS ---- */
+  .botanicals{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  @media (max-width:980px){.botanicals{grid-template-columns:repeat(2,1fr)}}
+  .bot-card{padding:36px 28px 32px;background:var(--cream-warm);border:1px solid var(--rule);position:relative;transition:transform .35s ease, background .35s ease}
+  .bot-card:hover{transform:translateY(-6px);background:#fff}
+  .bot-card svg{width:54px;height:54px;color:var(--olive);margin-bottom:24px}
+  .bot-card h3{font-size:24px;line-height:1.2;margin-bottom:6px}
+  .bot-card h3 em{font-style:italic;color:var(--olive)}
+  .bot-latin{font-family:var(--serif);font-style:italic;color:var(--sage);font-size:14px;margin-bottom:14px;display:block}
+  .bot-card p{font-size:14px;line-height:1.55;color:var(--ink-soft);margin:0}
+
+  /* ---- SYNERGY ---- */
+  .synergy{background:var(--olive);color:var(--cream);padding:140px 0;position:relative;overflow:hidden}
+  .synergy::before{
+    content:'';position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(circle at 80% 20%, rgba(184,84,54,.18), transparent 50%);
+  }
+  .synergy .container{position:relative}
+  .synergy h2{color:var(--cream);font-size:clamp(40px,6vw,80px);max-width:14ch;line-height:1.02}
+  .synergy h2 em{color:var(--travertine);font-style:italic}
+  .synergy .section-num{color:var(--terra)}
+  .syn-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;margin-top:60px;align-items:start}
+  @media (max-width:980px){.syn-grid{grid-template-columns:1fr;gap:40px}}
+  .syn-lede{font-family:var(--serif);font-size:24px;line-height:1.4;font-weight:400;font-style:italic;color:var(--cream);max-width:30ch}
+  .syn-detail p{font-size:15px;line-height:1.7;color:rgba(244,237,224,.85);margin:0 0 18px}
+  .syn-detail strong{color:var(--cream);font-weight:600}
+  .syn-pair{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:36px}
+  .syn-pair div{padding:24px;border:1px solid rgba(244,237,224,.2);border-radius:2px}
+  .syn-pair h4{font-size:20px;color:var(--cream);margin-bottom:8px}
+  .syn-pair p{font-size:13px;color:rgba(244,237,224,.7);margin:0;line-height:1.55}
+
+  /* ---- SCENT ---- */
+  .scent-tags{display:flex;flex-wrap:wrap;gap:10px;max-width:780px}
+  .scent-tags span{
+    border:1px solid var(--olive);
+    padding:10px 18px;font-size:13px;letter-spacing:.04em;
+    border-radius:99px;color:var(--olive-deep);
+    transition:background .25s ease, color .25s ease;
+    background:rgba(255,255,255,.4);
+  }
+  .scent-tags span:hover{background:var(--olive);color:var(--cream)}
+  .scent-quote{font-family:var(--serif);font-style:italic;font-size:32px;line-height:1.3;color:var(--olive-deep);max-width:24ch;margin-top:54px}
+
+  /* ---- INCI / TRANSPARENCY ---- */
+  .inci{background:var(--cream-warm);border:1px solid var(--rule);padding:40px;border-radius:2px;font-size:13px;line-height:1.7;color:var(--ink-soft);letter-spacing:.01em}
+  .inci-label{display:flex;align-items:center;gap:18px;margin-bottom:18px;font-family:var(--sans);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--olive)}
+  .inci-label::before{content:'';flex:0 0 28px;height:1px;background:var(--olive)}
+
+  /* ---- CERTS ---- */
+  .certs{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  @media (max-width:780px){.certs{grid-template-columns:repeat(2,1fr)}}
+  .cert{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:30px 26px;border:1px solid var(--rule);background:rgba(255,255,255,.4)}
+  .cert svg{width:44px;height:44px;color:var(--olive)}
+  .cert h4{font-family:var(--serif);font-size:22px;line-height:1.1}
+  .cert p{margin:0;font-size:13px;color:var(--ink-soft);line-height:1.5}
+
+  /* ---- TESTIMONIAL / RATING ---- */
+  .rating{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  @media (max-width:980px){.rating{grid-template-columns:1fr;gap:40px}}
+  .stars{font-size:72px;font-family:var(--serif);color:var(--terra);line-height:1;font-weight:600}
+  .stars .out{color:var(--ink-soft);font-size:32px;font-weight:400}
+  .rating-detail h3{font-size:32px;line-height:1.15;margin-bottom:14px}
+  .rating-detail p{margin:0;color:var(--ink-soft);font-size:15px;line-height:1.65}
+
+  /* ---- ORIGIN ---- */
+  .origin{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+  @media (max-width:980px){.origin{grid-template-columns:1fr}}
+  .origin-vis{position:relative;aspect-ratio:4/5;background:linear-gradient(160deg,var(--olive-soft),var(--olive-deep));overflow:hidden}
+  .origin-vis svg{position:absolute;inset:0;width:100%;height:100%;opacity:.35}
+  .origin-vis .o-text{position:absolute;left:32px;bottom:32px;color:var(--cream);font-family:var(--serif);font-style:italic;font-size:42px;line-height:1.05;letter-spacing:-.01em}
+  .origin-vis .o-text small{display:block;font-family:var(--sans);font-style:normal;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--travertine);margin-top:14px}
+  .origin-detail .eyebrow{margin-bottom:16px}
+  .origin-detail h2{font-size:clamp(36px,5vw,56px);line-height:1.05;margin-bottom:24px}
+  .origin-detail h2 em{color:var(--olive);font-style:italic}
+  .origin-detail p{font-size:16px;line-height:1.7;color:var(--ink-soft);margin:0 0 16px}
+  .origin-detail blockquote{
+    margin:30px 0 0;padding-left:24px;border-left:2px solid var(--terra);
+    font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.45;color:var(--olive-deep)
+  }
+
+  /* ---- BUY BLOCK ---- */
+  .buy{background:var(--ink);color:var(--cream);padding:120px 0}
+  .buy .container{display:grid;grid-template-columns:1.3fr 1fr;gap:80px;align-items:end}
+  @media (max-width:980px){.buy .container{grid-template-columns:1fr;gap:40px}}
+  .buy h2{color:var(--cream);font-size:clamp(48px,7vw,96px);line-height:.95;letter-spacing:-.02em}
+  .buy h2 em{color:var(--terra);font-style:italic}
+  .buy-lede{color:rgba(244,237,224,.7);font-size:17px;line-height:1.65;max-width:38ch;margin-top:30px}
+  .price-card{background:var(--cream);color:var(--ink);padding:40px;border-radius:2px}
+  .price-card .row{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--rule);font-size:14px}
+  .price-card .row:last-of-type{border-bottom:0}
+  .price-card .row b{font-family:var(--serif);font-size:18px;font-weight:600;letter-spacing:-.01em}
+  .price-card .big-price{font-family:var(--serif);font-size:56px;line-height:1;color:var(--olive);font-weight:600;margin:24px 0 6px}
+  .price-card .deal{font-size:13px;color:var(--terra-deep);font-weight:600;letter-spacing:.04em}
+  .price-card .btn-buy{width:100%;justify-content:center;margin-top:28px}
+  .price-card .availability{display:flex;align-items:center;gap:10px;margin-top:18px;font-size:13px;color:var(--olive)}
+  .dot{width:8px;height:8px;border-radius:50%;background:#4caf50;box-shadow:0 0 0 4px rgba(76,175,80,.18)}
+
+  /* ---- FOOTER ---- */
+  footer{padding:60px 0 50px;background:var(--olive-deep);color:rgba(244,237,224,.6);font-size:13px;line-height:1.7}
+  footer .container{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:end}
+  footer .brand-mark{color:var(--cream);font-size:28px}
+  footer .brand-mark em{color:var(--travertine)}
+  footer a{color:var(--cream);border-bottom:1px solid rgba(244,237,224,.3);transition:border-color .2s}
+  footer a:hover{border-bottom-color:var(--terra)}
+
+  /* ---- entry animations (JS-gated: default visible if JS is off) ---- */
+  .js .fade-up{opacity:0;transform:translateY(30px);transition:opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1)}
+  .js .fade-up.in{opacity:1;transform:none}
+  .js .stagger > *{opacity:0;transform:translateY(20px);transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1)}
+  .js .stagger.in > *{opacity:1;transform:none}
+  .stagger.in > *:nth-child(1){transition-delay:.05s}
+  .stagger.in > *:nth-child(2){transition-delay:.15s}
+  .stagger.in > *:nth-child(3){transition-delay:.25s}
+  .stagger.in > *:nth-child(4){transition-delay:.35s}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .fade-up,.stagger > *{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container topbar">
+    <div class="brand">
+      <span class="brand-mark">Biofficina <em>Toscana</em></span>
+      <span class="brand-tag">Lucca · Italia</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#botanik">Botanik</a></li>
+        <li><a href="#synergie">Synergie</a></li>
+        <li><a href="#duft">Duft</a></li>
+        <li><a href="#zertifikate">Zertifikate</a></li>
+        <li><a href="#kaufen">Bestellen</a></li>
+      </ul>
+    </nav>
+    <a class="ev-badge" href="https://www.ecco-verde.de/biofficina-toscana/antioxidative-aftershave-creme">bei Ecco Verde</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-meta fade-up">
+        <span class="line"></span>
+        <span class="eyebrow">Antioxidative After-Shave-Creme · 50 ml</span>
+      </div>
+      <h1 class="fade-up">
+        <span class="uomo">Uomo.</span>
+        <span class="sub">Die Pflege nach der Rasur. Ohne Alkohol, aus dem Herzen Italiens.</span>
+      </h1>
+      <p class="hero-lede fade-up">
+        Eine alkoholfreie Emulsion, formuliert für die <strong>Männerhaut nach der Rasur</strong>.
+        Mit Olivenöl und Mariendistel-Extrakt — der hauseigenen <strong>Uviox®-Oleox®-Synergie</strong> —
+        wirken Antioxidantien dem natürlichen Hautalterungsprozess entgegen.
+        Malve und Brennnessel beruhigen, was der Klinge gereizt hat.
+      </p>
+      <div class="cta-row fade-up">
+        <a class="btn-buy" href="https://www.ecco-verde.de/biofficina-toscana/antioxidative-aftershave-creme">
+          Jetzt bestellen <span class="price">15,79 €</span>
+        </a>
+        <div class="price-note">Ab 2 Stück <b>14,48 € / Stück</b> · 50 ml Pumpspender</div>
+      </div>
+    </div>
+
+    <div class="product-vis fade-up">
+      <!-- Stilisierte Flasche, kein Foto-Asset nötig -->
+      <svg class="product-svg" viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="bottle" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#2a3a1f"/>
+            <stop offset="100%" stop-color="#3a4d2c"/>
+          </linearGradient>
+          <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1d1d1b"/>
+            <stop offset="100%" stop-color="#0a0a09"/>
+          </linearGradient>
+        </defs>
+        <!-- pump cap -->
+        <rect x="80" y="0"  width="40" height="22" rx="3" fill="url(#cap)"/>
+        <rect x="70" y="22" width="60" height="28" rx="2" fill="url(#cap)"/>
+        <!-- neck -->
+        <rect x="78" y="50" width="44" height="22" fill="#1d1d1b"/>
+        <!-- body -->
+        <rect x="40" y="72" width="120" height="240" rx="6" fill="url(#bottle)"/>
+        <!-- label band -->
+        <rect x="40" y="140" width="120" height="120" fill="#f4ede0"/>
+        <text x="100" y="170" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="14" font-style="italic" fill="#3a4d2c">Biofficina</text>
+        <text x="100" y="187" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="14" font-style="italic" fill="#3a4d2c">Toscana</text>
+        <line x1="65" y1="200" x2="135" y2="200" stroke="#b85436" stroke-width="1"/>
+        <text x="100" y="226" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="22" font-weight="600" fill="#1d1d1b" letter-spacing="2">UOMO</text>
+        <text x="100" y="244" text-anchor="middle" font-family="Manrope, sans-serif" font-size="6" letter-spacing="2" fill="#3a4d2c">ANTIOXIDATIVE AFTER-SHAVE</text>
+        <text x="100" y="254" text-anchor="middle" font-family="Manrope, sans-serif" font-size="6" letter-spacing="2" fill="#3a4d2c">CREME · 50 ml</text>
+        <!-- shadow -->
+        <ellipse cx="100" cy="316" rx="58" ry="4" fill="#000" opacity="0.15"/>
+      </svg>
+      <div class="vis-stamp">AIAB<em>certified</em></div>
+      <div class="vis-caption">50 ml · alkoholfrei</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Ohne Alkohol &nbsp;·&nbsp; AIAB-zertifizierte Naturkosmetik &nbsp;·&nbsp; Vegan &nbsp;·&nbsp; Leaping Bunny &nbsp;·&nbsp; Hergestellt in Lucca, Toskana &nbsp;·&nbsp; Nickel getestet</span>
+    <span>Ohne Alkohol &nbsp;·&nbsp; AIAB-zertifizierte Naturkosmetik &nbsp;·&nbsp; Vegan &nbsp;·&nbsp; Leaping Bunny &nbsp;·&nbsp; Hergestellt in Lucca, Toskana &nbsp;·&nbsp; Nickel getestet</span>
+  </div>
+</div>
+
+<!-- BOTANIK -->
+<section id="botanik">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">01</span>
+      <div>
+        <span class="eyebrow">Die Pflanzen</span>
+        <h2 style="margin-top:14px">Vier Extrakte. Eine <em>klare Aufgabe.</em></h2>
+        <p class="section-intro">
+          Die Wirkstoffmatrix der UOMO-Creme stützt sich auf vier botanische Auszüge, die in der INCI-Liste namentlich
+          ausgewiesen sind — keine Marketing-Bezeichnungen, sondern überprüfbare Inhaltsstoffe.
+        </p>
+      </div>
+    </div>
+
+    <div class="botanicals stagger">
+      <div class="bot-card">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M32 56V14"/><path d="M32 14c-6-2-12 2-12 8 0 4 4 8 12 8M32 14c6-2 12 2 12 8 0 4-4 8-12 8M32 30c-6 0-10 4-10 10M32 30c6 0 10 4 10 10"/></svg>
+        <h3>Olivenöl <em>nativ</em></h3>
+        <span class="bot-latin">Olea Europaea Fruit Oil</span>
+        <p>Liefert Squalan-ähnliche Lipide und Polyphenole. Bildet die Trägermatrix der Uviox®-Oleox®-Synergie gegen freie Radikale.</p>
+      </div>
+      <div class="bot-card">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 50c8-6 14-18 14-30M48 50c-8-6-14-18-14-30M32 20v36M16 50c2 4 6 6 16 6 10 0 14-2 16-6"/></svg>
+        <h3>Mariendistel</h3>
+        <span class="bot-latin">Silybum Marianum Extract</span>
+        <p>Quelle des Silymarin-Komplexes. In der Formulierung als antioxidativer Partner des Olivenöls geführt.</p>
+      </div>
+      <div class="bot-card">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M32 56V12"/><path d="M32 22l-8-6M32 22l8-6M32 34l-10-4M32 34l10-4M32 46l-8-2M32 46l8-2"/></svg>
+        <h3>Brennnessel</h3>
+        <span class="bot-latin">Urtica Dioica Leaf Extract</span>
+        <p>Klassischer Männerpflege-Extrakt. In der INCI-Liste der UOMO-Creme zur Beruhigung gereizter Haut nach der Klinge.</p>
+      </div>
+      <div class="bot-card">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="32" cy="32" r="6"/><path d="M32 26c2-10 12-12 14-4-4 0-10 4-14 4ZM32 26c-2-10-12-12-14-4 4 0 10 4 14 4ZM32 38c2 10 12 12 14 4-4 0-10-4-14-4ZM32 38c-2 10-12 12-14 4 4 0 10-4 14-4Z"/></svg>
+        <h3>Malve</h3>
+        <span class="bot-latin">Malva Sylvestris Extract</span>
+        <p>Mucilage-reicher Auszug — bildet auf der frisch rasierten Haut einen weichen, hautberuhigenden Film.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYNERGY -->
+<section id="synergie" class="synergy">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">02</span>
+      <div>
+        <span class="eyebrow" style="color:var(--travertine)">Anti-Aging-Wirksystem</span>
+        <h2 style="margin-top:14px">Uviox® &amp; Oleox®. <em>Die Synergie.</em></h2>
+      </div>
+    </div>
+
+    <div class="syn-grid fade-up">
+      <p class="syn-lede">
+        „Eine alkoholfreie Emulsion, deren Olivenöl-Mariendistel-Wirksystem dem natürlichen Hautalterungsprozess entgegenwirkt."
+      </p>
+      <div class="syn-detail">
+        <p>
+          Die UOMO-Creme arbeitet mit zwei standardisierten Wirkkomplexen, die Biofficina Toscana in ihrer Produktbeschreibung
+          namentlich nennt: <strong>Uviox®</strong> und <strong>Oleox®</strong>. Beide nutzen toskanisches Olivenöl als Träger
+          und werden mit Mariendistel-Extrakt kombiniert.
+        </p>
+        <p>
+          Ergänzt wird das System durch <strong>Vitamin E (Tocopherol)</strong> und <strong>Vitamin C (Ascorbyl Palmitate)</strong>
+          — beides in der INCI ausgewiesen, beides etablierte Radikalfänger in Hautpflegeformulierungen.
+        </p>
+        <div class="syn-pair">
+          <div>
+            <h4>Uviox®</h4>
+            <p>Olivenöl + Mariendistel · antioxidativer Schutzkomplex</p>
+          </div>
+          <div>
+            <h4>Oleox®</h4>
+            <p>Olivenöl + Mariendistel · Anti-Aging-Wirksystem</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DUFT -->
+<section id="duft">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">03</span>
+      <div>
+        <span class="eyebrow">Duftprofil</span>
+        <h2 style="margin-top:14px">Subtil-würzig. <em>Maskulin.</em></h2>
+        <p class="section-intro">
+          Die in der INCI deklarierten ätherischen Öle bilden ein Bouquet zwischen Zitrus, Holz und Gewürz.
+          Keine synthetischen Parfums. Jedes Öl ist namentlich aufgeführt.
+        </p>
+      </div>
+    </div>
+
+    <div class="scent-tags fade-up">
+      <span>Orange</span>
+      <span>Zimt</span>
+      <span>Bergamotte</span>
+      <span>Zitrone</span>
+      <span>Koriander</span>
+      <span>Nelke</span>
+      <span>Geranie</span>
+      <span>Ingwer</span>
+      <span>Jasmin</span>
+      <span>Lavendel</span>
+      <span>Limonen</span>
+      <span>Linalool</span>
+      <span>Eugenol</span>
+    </div>
+
+    <p class="scent-quote fade-up">
+      „Ein Duft, den man nicht aufträgt, sondern annimmt."
+    </p>
+  </div>
+</section>
+
+<!-- INCI -->
+<section style="padding-top:0">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">04</span>
+      <div>
+        <span class="eyebrow">Volle Deklaration</span>
+        <h2 style="margin-top:14px">Die <em>INCI-Liste,</em> ungekürzt.</h2>
+        <p class="section-intro">
+          Wir reden gerne über das Ergebnis — und genauso gerne über jeden einzelnen Inhaltsstoff. So steht die
+          Volldeklaration auf der Originalverpackung:
+        </p>
+      </div>
+    </div>
+    <div class="inci fade-up">
+      <div class="inci-label">INCI · 50 ml Pumpspender</div>
+      Aqua, Ethylhexyl Stearate, Glycerin, Cetearyl Alcohol, Glyceryl Stearate SE, Olea Europaea Fruit Oil,
+      Helichrysum Italicum Flower Extract, Hydrolyzed Olive Fruit, Hydrolyzed Grape Fruit, Sodium Lauroyl Glutamate,
+      Stearic Acid, Lecithin, Silybum Marianum Extract, Urtica Dioica Leaf Extract, Malva Sylvestris Flower/Leaf/Stem Extract,
+      Sodium Dehydroacetate, Tocopherol, Phenoxyethanol, Sodium Benzoate, Citric Acid, Ascorbyl Palmitate, Xanthan Gum,
+      Parfum (aus ätherischen Ölen: Orange, Zimt, Bergamotte, Zitrone, Koriander, Nelke, Geranie, Ingwer, Jasmin, Lavendel),
+      Limonene, Linalool, Eugenol.
+    </div>
+  </div>
+</section>
+
+<!-- ZERTIFIKATE -->
+<section id="zertifikate">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">05</span>
+      <div>
+        <span class="eyebrow">Geprüft. Belegt.</span>
+        <h2 style="margin-top:14px">Vier Siegel. <em>Vier Versprechen.</em></h2>
+      </div>
+    </div>
+    <div class="certs stagger">
+      <div class="cert">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="32" cy="32" r="22"/><path d="M22 32l8 8 14-14"/></svg>
+        <h4>AIAB-zertifiziert</h4>
+        <p>Italienischer Bio-Naturkosmetik-Standard. Kontrollierter Anbau, kontrollierte Formulierung.</p>
+      </div>
+      <div class="cert">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 28c-2 8 4 18 12 18s14-10 12-18M24 22c0-4 2-8 4-8M40 22c0-4-2-8-4-8M24 28a4 4 0 110-8M40 28a4 4 0 100-8"/></svg>
+        <h4>Leaping Bunny</h4>
+        <p>Cruelty-free zertifiziert. Keine Tierversuche, weder am Endprodukt noch an Rohstoffen.</p>
+      </div>
+      <div class="cert">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 40c4-10 14-14 18-14s14 4 18 14M22 40v8M42 40v8M28 48h8"/></svg>
+        <h4>Vegan</h4>
+        <p>Keine tierischen Inhaltsstoffe in der Formulierung. Nachvollziehbar in der vollständigen INCI.</p>
+      </div>
+      <div class="cert">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 20h32M16 32h32M16 44h32"/><circle cx="32" cy="32" r="22"/></svg>
+        <h4>Nickel getestet</h4>
+        <p>Auf Nickel-Spurenbelastung geprüft — relevant für sensibilisierte Haut nach der Rasur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RATING -->
+<section style="padding-top:0">
+  <div class="container">
+    <div class="rating fade-up">
+      <div>
+        <span class="eyebrow">Bewertungen auf ecco-verde.de</span>
+        <div class="stars">4,3<span class="out"> / 5</span></div>
+      </div>
+      <div class="rating-detail">
+        <h3>157 verifizierte Rezensionen.</h3>
+        <p>
+          Stand der Erhebung auf der Produktseite von Ecco Verde. Männer schätzen die schnelle Einziehzeit,
+          das alkoholfreie Hautgefühl und das warme Würz-Bouquet — gerade ab dem Alter, in dem die Klinge
+          mehr Pflege fordert als sie selbst gibt.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORIGIN -->
+<section>
+  <div class="container origin">
+    <div class="origin-vis fade-up">
+      <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <pattern id="hills" width="400" height="500" patternUnits="userSpaceOnUse">
+            <path d="M0 380 Q 80 300 160 340 T 320 320 T 480 360 V500 H0 Z" fill="rgba(244,237,224,.18)"/>
+            <path d="M0 420 Q 100 360 200 390 T 400 400 V500 H0 Z" fill="rgba(244,237,224,.25)"/>
+            <path d="M0 460 Q 120 420 240 440 T 480 450 V500 H0 Z" fill="rgba(244,237,224,.35)"/>
+          </pattern>
+        </defs>
+        <rect width="400" height="500" fill="url(#hills)"/>
+        <!-- sun -->
+        <circle cx="320" cy="120" r="38" fill="rgba(244,237,224,.4)"/>
+        <!-- cypresses -->
+        <g fill="rgba(29,29,27,.4)">
+          <path d="M70 380 Q 70 340 75 320 Q 80 340 80 380 Z"/>
+          <path d="M120 390 Q 120 350 125 330 Q 130 350 130 390 Z"/>
+          <path d="M180 395 Q 180 360 184 342 Q 188 360 188 395 Z"/>
+        </g>
+      </svg>
+      <div class="o-text">Lucca,<br>Toscana<small>HQ Biofficina s.r.l.</small></div>
+    </div>
+    <div class="origin-detail fade-up">
+      <span class="eyebrow">Herkunft</span>
+      <h2>Naturkosmetik aus dem <em>Herzen Italiens.</em></h2>
+      <p>
+        Biofficina Toscana sitzt in <strong>Lucca</strong>, knapp 30 km nördlich der Olivenhaine bei Pisa.
+        Die Manufaktur bezieht — laut eigener Brand-Darstellung auf ecco-verde.de — den größten Teil ihrer Rohstoffe
+        wie Öle und Honig aus regionaler, biologischer Landwirtschaft.
+      </p>
+      <p>
+        Kurze Transportwege, sparsame Verpackung, recycelte Materialien. Eine Linie, die nicht laut wird — die
+        sich darauf verlässt, dass eine gut formulierte alkoholfreie After-Shave-Creme für sich selbst spricht.
+      </p>
+      <blockquote>
+        Regionalität und kurze Transportwege sind für die Produzenten genauso wichtig wie der sparsame
+        Umgang mit Verpackung.
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- BUY -->
+<section id="kaufen" class="buy">
+  <div class="container">
+    <div>
+      <span class="eyebrow" style="color:var(--travertine)">Jetzt bestellen</span>
+      <h2 style="margin-top:18px">Pflege, die <em>verdient</em><br>ist.</h2>
+      <p class="buy-lede">
+        Über 45 zu sein heißt nicht, weniger zu erwarten — sondern besser zu wissen, was zählt.
+        Eine Creme mit klarer Deklaration, italienischer Herkunft und einer Wirkstoffmatrix,
+        die nicht erklärt werden muss, sondern auf der Haut funktioniert.
+      </p>
+    </div>
+
+    <div class="price-card fade-up">
+      <div class="row"><span>Produkt</span><b>UOMO After-Shave-Creme</b></div>
+      <div class="row"><span>Volumen</span><b>50 ml</b></div>
+      <div class="row"><span>Hersteller</span><b>Biofficina s.r.l., Lucca (IT)</b></div>
+      <div class="row"><span>Verkauf via</span><b>Ecco Verde</b></div>
+
+      <div class="big-price">15,79&nbsp;€</div>
+      <div class="deal">Mengenrabatt: ab 2 Stück 14,48 € / Stück (−8 %)</div>
+
+      <a class="btn-buy" href="https://www.ecco-verde.de/biofficina-toscana/antioxidative-aftershave-creme">
+        Bei Ecco Verde bestellen
+        <span aria-hidden="true">→</span>
+      </a>
+
+      <div class="availability"><span class="dot"></span> Auf Lager · versandfertig</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <div class="brand-mark">Biofficina <em>Toscana</em> · UOMO</div>
+      <div style="margin-top:12px">Alle Fakten von <a href="https://www.ecco-verde.de/biofficina-toscana/antioxidative-aftershave-creme">ecco-verde.de</a>.
+      Preise &amp; Verfügbarkeit Stand der Recherche, können sich ändern.</div>
+    </div>
+    <div style="text-align:right">
+      <div>Vibe-coded am niceshops AI Computer Use Workshop</div>
+      <div>Saaz · 2026-05-27</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  // Intersection-based entry animations
+  const io = new IntersectionObserver((entries)=>{
+    for (const e of entries) if (e.isIntersecting){
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    }
+  }, {threshold: 0.12, rootMargin: '0px 0px -10% 0px'});
+
+  for (const el of document.querySelectorAll('.fade-up, .stagger')) io.observe(el);
+  // Failsafe: any element still hidden after 2.5s gets revealed (e.g. full-page screenshot capture).
+  setTimeout(()=>{ for (const el of document.querySelectorAll('.fade-up:not(.in), .stagger:not(.in)')) el.classList.add('in'); }, 2500);
+</script>
+
+</body>
+</html>
